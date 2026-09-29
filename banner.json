@@ -1,0 +1,68 @@
+{
+  "eyebrow": "PICOKIT // LESSON 36",
+  "title": "PICOKIT // SCHEDULER",
+  "subtitle": "TIMED VENT AND LED ACTIONS + AUTHENTICATED HEARTBEAT",
+  "accent": "#F147FF",
+  "dim": "#952C9E",
+  "white": "#F1DCFF",
+  "cyan": "#7FD8E0",
+  "bg": "#100411",
+  "bg_edge": "#040105",
+  "icon": "clock",
+  "panel_status": "EVENT 2  ·  VENT OPEN  ·  PHASE 1",
+  "chips": [
+    {
+      "label": "EVENT",
+      "value": "2"
+    },
+    {
+      "label": "VENT",
+      "value": "open"
+    },
+    {
+      "label": "PHASE",
+      "value": "1"
+    },
+    {
+      "label": "RADIO",
+      "value": "-40 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00036  seq 16  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 16",
+    "[+] schedule tick  vent open 90 deg",
+    "[+] schedule tick  led phase 1 green"
+  ],
+  "categories": [
+    "SCHED",
+    "VENT",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "SC-01",
+      "label": "vent",
+      "value": "open"
+    },
+    {
+      "tag": "SC-02",
+      "label": "phase",
+      "value": "1"
+    },
+    {
+      "tag": "SC-03",
+      "label": "period",
+      "value": "5 s"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  TIMER  ·  ACTION  ·  RADIO  ==[ SCHED ]=="
+  ],
+  "repo": "picokit-36-scheduler",
+  "layout": "panel",
+  "stat": "2"
+}
